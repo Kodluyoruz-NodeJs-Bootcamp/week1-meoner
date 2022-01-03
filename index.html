@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Drap and drop project</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column" draggable="true">
+        <p>To do</p>
+        <div id="toDoList" class="container">
+          <p class="draggable" draggable="true" contenteditable="true">
+            Todo Item
+            <button
+              class="removeButton"
+              onclick="removeToDo(this)"
+              contenteditable="false"
+            >
+             <img class="removeIcon" src="ic_remove.png" width="25" height="25">
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="column" draggable="true">
+        <p>Doing</p>
+        <div class="container">
+        </div>
+      </div>
+
+      <div class="column" draggable="true">
+        <p>Done</p>
+        <div class="container">
+        </div>
+      </div>
+    </div>
+    <button class="addButton" onclick="addToDo()">Add To-do</button>
+  </body>
+</html>
